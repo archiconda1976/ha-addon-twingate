@@ -1,0 +1,6 @@
+{
+  "domain": "twingate_connector",
+  "name": "Twingate Connector",
+  "version": "1.0.0",
+  "iot_class": "local_polling"
+}

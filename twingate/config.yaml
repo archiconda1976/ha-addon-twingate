@@ -1,0 +1,28 @@
+name: Twingate Connector
+version: "1.0.0"
+slug: twingate_connector
+description: Run a Twingate Connector inside Home Assistant
+arch:
+  - amd64
+  - aarch64
+startup: services
+boot: auto
+init: false
+
+options:
+  network: ""
+  access_token: ""
+  refresh_token: ""
+  log_level: info
+
+schema:
+  network: str
+  access_token: password
+  refresh_token: password
+  log_level: list(debug|info|warn|error)
+
+ports:
+  8099/tcp: null
+
+map:
+  - config:rw
